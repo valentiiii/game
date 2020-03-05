@@ -1,0 +1,211 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+body{
+  font-family: YuGothic,'Yu Gothic',sans-serif;
+  margin: 0px;
+  background-color: #EEEEEE;
+  height: 100%;
+  width: 100%;
+}
+
+
+.header {
+  color:white;
+  background-color:#333333;
+  height: 15%;
+  margin: 0%;
+  padding:0%;
+}
+.title{
+  padding:1.5% 0% 0% 7%;
+  /* /* text-align:left; */
+  margin: 0px;
+  width: 50%;
+  float: left;
+}
+
+.title h1{
+margin: 0px;
+list-style: none;
+
+}
+
+.title h1 a{
+  text-decoration: none;
+  color:white;
+}
+.title h1 a:hover{
+ color:#CCCCCC;
+}
+.title p {
+  color:white;
+  margin: 0px;
+  font-size: 15px;
+}
+
+.header-list{
+  float: right;
+  margin: 4% 0% 0% 20%;
+  width: 22%;
+}
+
+.header-list li{
+  font-size: 80%;
+  float: left;
+  list-style: none;
+  margin: 0% 5%;
+}
+.header-list li a{
+  text-decoration: none;
+  color:white;
+}
+.header-list li a:hover{
+ color:#CCCCCC;
+}
+/* ------------------------------------------------------------------------------------header　ここまで */
+
+
+
+.header-bottom{
+  background-color: white;
+  font-size: 90%;
+  margin-bottom: 5%;
+}
+.update-home{
+  margin: 0%;
+  padding: 1.5% 0% 0% 7%;
+}
+
+.update-home a{
+  text-decoration: none;
+  
+}
+.update-home a:hover{
+ color:#CCCCCC;
+}
+.header-bottom h2{
+  margin:0%;
+  padding: 0% 0% 0% 7%;
+}
+.update-text{
+  margin:0%;
+  padding: 0% 0% 1.5% 7%;
+}
+
+/* ------------------------------------------------------------------------------------header-bottom　ここまで */
+
+
+.main{
+ height: 40%;
+ width: 100%;
+ margin-top: 4%;
+ text-align: center;
+ /* padding: 0% 4% 0% 4%; */
+}
+.picture{
+ background-color: white;
+ /* float: left; */
+ display: inline-block;
+ margin: 0% 2.5%;
+ width: 15%;
+ height: 90%;
+ border: 2px solid #dee7ec;
+}
+.urltitle{
+  text-align: left;
+  padding: 4% 0% 4% 8%;
+  margin: 0%;
+  font-size: 120%;
+}
+.middle{
+  height: 45%;
+  width: 100%;
+  position:relative;
+  border-top: 2px solid #dee7ec;
+  border-bottom: 2px solid #dee7ec;
+}
+.middle a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent:-999px;
+}
+.middle:hover {
+  filter:alpha(opacity=70);/* IE 6,7*/
+  -ms-filter: "alpha(opacity=70)";/* IE 8,9 */
+  -moz-opacity:0.7;/* FF , Netscape */
+  -khtml-opacity: 0.7;/* Safari 1.x */
+  opacity:0.7;
+  zoom:1;/*IE*/
+}
+img{
+  width: 100%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.text{
+  text-align: left;
+  font-size: 100%;
+  margin:5% 5%;
+}
+
+/* ------------------------------------------------------------------------------------main　ここまで */
+
+.footer{
+  background-color: black;
+  color: white;
+  height: 12%;
+  width: 100%;
+  margin-top: 3%;
+}
+.footer-title{
+  padding:1.5% 0% 0% 7%;
+  /* /* text-align:left; */
+  margin: 0.6% 0% 0% 0%;
+  width: 50%;
+  float: left;
+}
+
+.footer-title h1{
+  font-size: 130%;
+  margin: 0px;
+  }
+.footer-title p {
+    color:white;
+    margin: 50% 0% 0% 0%;
+    font-size: 15px;
+  }
+.footer-list{
+  float: right;
+  width: 20%;
+}
+.footer-list li{
+  float: left;
+  list-style: none;
+  margin: 7% 5% 0% 5%;
+  font-size: 70%;
+}
+
+.footer-list li a{
+  text-decoration: none;
+  color:white;
+}
+.footer-list li a:hover{
+ color:#CCCCCC;
+}
+.footer p{
+  font-size: 2%;
+  text-align: center;
+  padding: 4.5% 0% 0% 0%;
+}
+
+
+
