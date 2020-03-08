@@ -78,7 +78,7 @@ list-style: none;
 
 .update-home a{
   text-decoration: none;
-  
+
 }
 .update-home a:hover{
  color:#CCCCCC;
@@ -106,6 +106,9 @@ list-style: none;
   font-size: 120%;
   height: 80%;
   margin:0% auto;
+}
+form{
+  height: 100%;
 }
 .contact-form p{
   text-align: left;
