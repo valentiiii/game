@@ -80,7 +80,7 @@ list-style: none;
 
 .update-home a{
   text-decoration: none;
-  
+
 }
 .update-home a:hover{
  color:#CCCCCC;
@@ -119,6 +119,16 @@ list-style: none;
   margin: 0%;
   font-size: 120%;
 }
+
+.urltitle a{
+  text-decoration: none;
+  color:#474747;
+}
+
+.urltitle a:hover{
+ text-decoration:underline;
+}
+
 .middle{
   height: 45%;
   width: 100%;
@@ -190,7 +200,7 @@ img{
 .footer-list li{
   float: left;
   list-style: none;
-  margin: 7% 5% 0% 5%;
+  margin: 9.5% 5% 0% 5%;
   font-size: 70%;
 }
 
