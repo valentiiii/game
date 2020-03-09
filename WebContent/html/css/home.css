@@ -59,7 +59,7 @@ list-style: none;
 }
 
 .header-list li{
-  font-size: 80%;
+  font-size: 0.75vw;
   float: left;
   list-style: none;
   margin: 0% 5%;
@@ -170,7 +170,8 @@ img{
 }
 .text{
   text-align: left;
-  font-size: 1.76vh;
+
+  font-size: 1.75vh;
   margin:5% 5%;
 }
 
