@@ -1,13 +1,17 @@
+@media screen and (min-width:1024px) {
+/*pc用のcssを記述*/
+
+
 html{
-  height: 1000px;
-  width: 1900px;
+  height: 100%;
+  width: 100%;
 }
 body{
   font-family: YuGothic,'Yu Gothic',sans-serif;
   margin: 0px;
   background-color: #EEEEEE;
-  height: 1000px;
-  width: 1900px;
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -217,5 +221,5 @@ img{
   padding: 4.5% 0% 0% 0%;
 }
 
-
+}
 
