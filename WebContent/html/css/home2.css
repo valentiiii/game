@@ -1,12 +1,19 @@
+@media screen and (min-width:1024px) {
+/*pc用のcssを記述*/
+
+
 html{
-  height: auto;
-  width:auto;
+  height: 100%;
+ /*  width: 1000px; */
+
+  min-width: 100%;
+
 }
 body{
   font-family: YuGothic,'Yu Gothic',sans-serif;
   margin: 0px;
   background-color: #EEEEEE;
-  height: auto;
+  height: 100%;
   /* width: 1000px; */
 }
 
@@ -14,15 +21,15 @@ body{
 .header {
   color:white;
   background-color:#333333;
-  height: 140px;
-  margin: 0px;
-  padding:0px;
+  height: 15%;
+  margin: 0%;
+  padding:0%;
 }
 .title{
-  padding:23px 0px 0px 130px;
+  padding:1.5% 0% 0% 7%;
   /* /* text-align:left; */
   margin: 0px;
-  width: 500px;
+  width: 50%;
   float: left;
 }
 
@@ -47,12 +54,12 @@ list-style: none;
 
 .header-list{
   float: right;
-  margin: 70px 30px 0px 0px;
-  width: 400px;
+  margin: 4% 0% 0% 20%;
+  width: 22%;
 }
 
 .header-list li{
-  font-size: 14px;
+  font-size: 0.75vw;
   float: left;
   list-style: none;
   margin: 0% 5%;
@@ -70,12 +77,12 @@ list-style: none;
 
 .header-bottom{
   background-color: white;
-  font-size: 14px;
-  margin-bottom: 30px;
+  font-size: 90%;
+  margin-bottom: 5%;
 }
 .update-home{
-  margin: 0px;
-  padding: 28px 0px 0px 130px;
+  margin: 0%;
+  padding: 1.5% 0% 0% 7%;
 }
 
 .update-home a{
@@ -86,36 +93,38 @@ list-style: none;
  color:#CCCCCC;
 }
 .header-bottom h2{
-  margin:0px;
-  padding: 0px 0px 0px 130px;
+  margin:0%;
+  padding: 0% 0% 0% 7%;
 }
 .update-text{
-  margin:0px;
-  padding: 0px 0px 30px 130px;
+  margin:0%;
+  padding: 0% 0% 1.5% 7%;
 }
 
 /* ------------------------------------------------------------------------------------header-bottom　ここまで */
 
 
 .main{
- height: 380px;
- margin-top: 100px;
+ height: 40%;
+ width: 100%;
+ margin-top: 4%;
  text-align: center;
+ /* padding: 0% 4% 0% 4%; */
 }
 .picture{
  background-color: white;
  /* float: left; */
  display: inline-block;
- margin: 0px 40px;
- width: 280px;
- height: 350px;
+ margin: 0% 2.5%;
+ width: 15%;
+ height: 90%;
  border: 2px solid #dee7ec;
 }
 .urltitle{
   text-align: left;
-  padding: 12px 0% 12px 20px;
-  margin: 0px;
-  font-size:18px;
+  padding: 4% 0% 4% 8%;
+  margin: 0%;
+  font-size: 120%;
 }
 
 .urltitle a{
@@ -128,8 +137,8 @@ list-style: none;
 }
 
 .middle{
-  height: 160px;
-  width: 280px;
+  height: 45%;
+  width: 100%;
   position:relative;
   border-top: 2px solid #dee7ec;
   border-bottom: 2px solid #dee7ec;
@@ -139,8 +148,8 @@ list-style: none;
   position: absolute;
   top: 0;
   left: 0;
-  width: 280px;
-  height: 160px;
+  width: 100%;
+  height: 100%;
   text-indent:-999px;
 }
 .middle:hover {
@@ -152,7 +161,7 @@ list-style: none;
   zoom:1;/*IE*/
 }
 img{
-  width: 280px;
+  width: 100%;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -161,8 +170,9 @@ img{
 }
 .text{
   text-align: left;
-  font-size: 15px;
-  margin:14px 14px;
+
+  font-size: 1.75vh;
+  margin:5% 5%;
 }
 
 /* ------------------------------------------------------------------------------------main　ここまで */
@@ -170,36 +180,36 @@ img{
 .footer{
   background-color: black;
   color: white;
-  height: 112px;
-  margin-top: 55px;
+  height: 12%;
+  width: 100%;
+  margin-top: 3%;
 }
 .footer-title{
-  padding:30px 0px 0px 120px;
+  padding:1.5% 0% 0% 7%;
   /* /* text-align:left; */
-  margin: 12px 0px 0px 0px;
-  width: 250px;
+  margin: 0.6% 0% 0% 0%;
+  width: 50%;
   float: left;
 }
 
 .footer-title h1{
-  font-size: 20px;
+  font-size: 130%;
   margin: 0px;
   }
 .footer-title p {
     color:white;
-    /* margin: 10px 0px 0px 0px; */
+    margin: 50% 0% 0% 0%;
     font-size: 15px;
   }
 .footer-list{
   float: right;
-  margin:0px 40px 0px 0px;
-  width: 350px;
-  font-size:12px;
+  width: 20%;
 }
 .footer-list li{
   float: left;
   list-style: none;
-  margin: 36px 20px 0px 15px;
+  margin: 9.5% 5% 0% 5%;
+  font-size: 70%;
 }
 
 .footer-list li a{
@@ -210,10 +220,10 @@ img{
  color:#CCCCCC;
 }
 .footer p{
-  font-size: 12px;
+  font-size: 2%;
   text-align: center;
-  padding: 87px 0px 0px 0px;
+  padding: 4.5% 0% 0% 0%;
 }
 
-
+}}
 
