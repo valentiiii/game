@@ -4,14 +4,14 @@
 
 html{
   height: 100%;
-  width: 100%;
+ /*  width: 1000px; */
 }
 body{
   font-family: YuGothic,'Yu Gothic',sans-serif;
   margin: 0px;
   background-color: #EEEEEE;
   height: 100%;
-  width: 100%;
+  /* width: 1000px; */
 }
 
 
@@ -221,5 +221,5 @@ img{
   padding: 4.5% 0% 0% 0%;
 }
 
-}
+}}
 
