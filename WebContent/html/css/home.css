@@ -5,6 +5,9 @@
 html{
   height: 100%;
  /*  width: 1000px; */
+
+  min-width: 100%;
+
 }
 body{
   font-family: YuGothic,'Yu Gothic',sans-serif;
@@ -167,7 +170,7 @@ img{
 }
 .text{
   text-align: left;
-  font-size: 100%;
+  font-size: 1.76vh;
   margin:5% 5%;
 }
 
