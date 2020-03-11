@@ -107,7 +107,7 @@ list-style: none;
  /* float: left; */
  display: inline-block;
  margin: 0px 40px;
- width: 280px;
+ width: 15%;
  height: 350px;
  border: 2px solid #dee7ec;
 }
@@ -129,7 +129,7 @@ list-style: none;
 
 .middle{
   height: 160px;
-  width: 280px;
+  width: 100%;
   position:relative;
   border-top: 2px solid #dee7ec;
   border-bottom: 2px solid #dee7ec;
@@ -139,7 +139,7 @@ list-style: none;
   position: absolute;
   top: 0;
   left: 0;
-  width: 280px;
+  width: 100%;
   height: 160px;
   text-indent:-999px;
 }
@@ -152,7 +152,7 @@ list-style: none;
   zoom:1;/*IE*/
 }
 img{
-  width: 280px;
+  width: 100%;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
