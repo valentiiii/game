@@ -20,7 +20,7 @@ public class Contact_Sarvlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest session, HttpServletResponse response)
 			throws ServletException, IOException {
-		doGet(session, response);
+
 		ContactDAO dao = new ContactDAO();
 
 
@@ -35,5 +35,6 @@ public class Contact_Sarvlet extends HttpServlet {
 
 		dao.userdt(contact);
 
+		response.sendRedirect("html/home.html");
 	}
 }
