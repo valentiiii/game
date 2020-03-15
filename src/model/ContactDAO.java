@@ -17,6 +17,7 @@ public class ContactDAO{
 		Connection conn = null;
 
 		try {
+		Class.forName("com.mysql.jdbc.Driver");
 		conn = DriverManager.getConnection(JDBC_URL,DB_USER,DB_PASS);
 		String sql = "INSERT INTO game (NAME, ADDRESS, CONTENT) VALUES( ? , ? , ? )";
 
