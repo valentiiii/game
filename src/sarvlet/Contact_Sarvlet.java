@@ -22,21 +22,18 @@ public class Contact_Sarvlet extends HttpServlet {
 			throws ServletException, IOException {
 		doGet(session, response);
 		ContactDAO dao = new ContactDAO();
-		try {
+
+
 			// 文字コードのセット
            session.setCharacterEncoding("UTF-8");
-           String name = session.getParameter("name");
+        String name = session.getParameter("name");
    		String address = session.getParameter("address");
    		String content = session.getParameter("content");
 
    		ContactBean contact = new ContactBean(name,address,content);
 		session.setAttribute("contact",contact);
 
-		dao.userdt();
+		dao.userdt(contact);
 
-
-		}catch (Exception e) {
-		}
 	}
-
 }

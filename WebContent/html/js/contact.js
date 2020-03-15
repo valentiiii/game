@@ -19,9 +19,16 @@ function userdt() {
 		name.focus();
 		return false;
 
-	// アドレスが未入力の場合
-	} else if (address.value == "") {
-		alert("アドレスを入力してください");
+	// アドレスが未入力の場合またはアドレスに@が含まれない場合
+	} else if ((address.value == "" )||!(address.value.includes("@"))/*||!(address.value.match(/^[A-Za-z0-9]*$/))*/){
+		if(address.value == "" ){
+			alert("アドレスを入力してください");
+		}else if(!(address.value.includes("@"))){
+			alert("アドレスを正しく入力してください");
+		/*}else if(!(address.value.match(/^[A-Za-z0-9]*$/))){
+			alert("アドレスに使用できない文字が含まれています");
+		}*/}
+
 		address.focus();
 		return false;
 
