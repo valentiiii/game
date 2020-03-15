@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class ContactDAO{
 
-	private final String JDBC_URL ="jdbc:mysql://localhost:3306/MySQL";
+	private final String JDBC_URL ="jdbc:mysql://localhost:3306/game?serverTimezone=JST";
 	private final String DB_USER ="root";
 	private final String DB_PASS ="password";
 
@@ -17,35 +17,40 @@ public class ContactDAO{
 		Connection conn = null;
 
 		try {
-		Class.forName("com.mysql.jdbc.Driver");
-		conn = DriverManager.getConnection(JDBC_URL,DB_USER,DB_PASS);
-		String sql = "INSERT INTO game (NAME, ADDRESS, CONTENT) VALUES( ? , ? , ? )";
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection(JDBC_URL,DB_USER,DB_PASS);
+			String sql = "INSERT INTO game (NAME, ADDRESS, CONTENT) VALUES( ? , ? , ? )";
 
-		PreparedStatement pStmt = conn.prepareStatement(sql);
-		pStmt.setString(1, contact.getName());
-		pStmt.setString(2, contact.getAddress());
-		pStmt.setString(3, contact.getContent());
+			PreparedStatement pStmt = conn.prepareStatement(sql);
+			pStmt.setString(1, contact.getName());
+			pStmt.setString(2, contact.getAddress());
+			pStmt.setString(3, contact.getContent());
 
-		// INSERT文を実行
-		int result = pStmt.executeUpdate();
+			// INSERT文を実行
+			int result = pStmt.executeUpdate();
 
-	      if (result != 1) {
-	          return false;
-	        }
-	      } catch (SQLException e) {
-	        e.printStackTrace();
-	        return false;
-	      } finally {
+		    if (result != 1) {
+		          return false;
+		    }
 
-	        // データベース切断
-	        if (conn != null) {
-	          try {
-	            conn.close();
-	          } catch (SQLException e) {
-	            e.printStackTrace();
-	          }
-	        }
-	      }
-	      return true;
-	    }
+		}catch (SQLException e) {
+		    e.printStackTrace();
+		    return false;
+
+		}catch (ClassNotFoundException e) {
+			// TODO 自動生成された catch ブロック
+			e.printStackTrace();
+
+		} finally {
+			// データベース切断
+		    if (conn != null) {
+		    	try {
+		    	conn.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+}
+		return true;
+	}
 }
