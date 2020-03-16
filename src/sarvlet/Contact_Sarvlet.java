@@ -35,6 +35,6 @@ public class Contact_Sarvlet extends HttpServlet {
 
 		dao.userdt(contact);
 
-		response.sendRedirect("html/home.html");
+		response.sendRedirect("html/contactEnd.html");
 	}
 }
