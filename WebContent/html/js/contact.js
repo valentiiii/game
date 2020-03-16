@@ -8,6 +8,9 @@ function userdt() {
 	// 問い合わせ内容を取得
 	var content = document.getElementById("content");
 
+	//アドレスに使用できない文字を判別するための正規表現
+	var regexp = /^[A-Za-z0-9]+[\w-]+@[\w\.-]+\.\w{2,}$/;
+
 	// 空白削除
 	name.value = name.value.trim();
 	address.value = address.value.trim();
@@ -19,15 +22,16 @@ function userdt() {
 		name.focus();
 		return false;
 
-	// アドレスが未入力の場合またはアドレスに@が含まれない場合
-	} else if ((address.value == "" )||!(address.value.includes("@"))/*||!(address.value.match(/^[A-Za-z0-9]*$/))*/){
+	// アドレスが未入力の場合またはアドレスに@が含まれないまたは使用できない文字が含まれる場合
+	} else if ((address.value == "" )||!(address.value.includes("@"))||!(address.value.match(regexp)))
+			/*(address.value.match(/^[A-Za-z0-9]*$/)))*/{
 		if(address.value == "" ){
 			alert("アドレスを入力してください");
 		}else if(!(address.value.includes("@"))){
 			alert("アドレスを正しく入力してください");
-		/*}else if(!(address.value.match(/^[A-Za-z0-9]*$/))){
+		}else if(!(address.value.match(regexp))){
 			alert("アドレスに使用できない文字が含まれています");
-		}*/}
+		}
 
 		address.focus();
 		return false;

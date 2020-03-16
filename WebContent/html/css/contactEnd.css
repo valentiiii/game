@@ -1,0 +1,170 @@
+html{
+  height: auto;
+  width:auto;
+}
+body{
+  font-family: YuGothic,'Yu Gothic',sans-serif;
+  margin: 0px;
+  background-color: #EEEEEE;
+  height: auto;
+  min-height: 100vh;
+  /* width: 1000px; */
+}
+
+
+.header {
+  color:white;
+  background-color:#333333;
+  height: 140px;
+  margin: 0px;
+  padding:0px;
+}
+.title{
+  padding:23px 0px 0px 130px;
+  /* /* text-align:left; */
+  margin: 0px;
+  width: 500px;
+  float: left;
+}
+
+.title h1{
+margin: 0px;
+list-style: none;
+
+}
+
+.title h1 a{
+  text-decoration: none;
+  color:white;
+}
+.title h1 a:hover{
+ color:#CCCCCC;
+}
+.title p {
+  color:white;
+  margin: 0px;
+  font-size: 15px;
+}
+
+.header-list{
+  float: right;
+  margin: 70px 30px 0px 0px;
+  width: 400px;
+}
+
+.header-list li{
+  font-size: 14px;
+  float: left;
+  list-style: none;
+  margin: 0% 5%;
+}
+.header-list li a{
+  text-decoration: none;
+  color:white;
+}
+.header-list li a:hover{
+ color:#CCCCCC;
+}
+/* ------------------------------------------------------------------------------------header　ここまで */
+
+
+.header-bottom{
+  background-color: white;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.update-home{
+  margin: 0px;
+  padding: 28px 0px 0px 130px;
+}
+
+.update-home a{
+  text-decoration: none;
+
+}
+.update-home a:hover{
+ color:#CCCCCC;
+}
+.header-bottom h2{
+  margin:0px;
+  padding: 0px 0px 0px 130px;
+}
+.update-text{
+  margin:0px;
+  padding: 0px 0px 30px 130px;
+}
+
+
+/* ------------------------------------------------------------------------------------header-bottom　ここまで */
+.main{
+	width:820px;
+	text-align: center;
+	margin :0px auto;
+}
+.main h1{
+	margin:50px 0px 50px 0px;
+	text-align:center;
+}
+.main p{
+	padding:0px auto;
+	text-align:center;
+	font-size:20px;
+	line-height: 1.5;
+	margin: 0;
+}
+
+
+/* ------------------------------------------------------------------------------------main　ここまで */
+
+.footer{
+  background-color: black;
+  color: white;
+  height: 112px;
+  width:100%;
+  margin-top: 50px;
+  position: absolute;/*←絶対位置*/
+  bottom: 0; /*下に固定*/
+}
+.footer-title{
+  padding:30px 0px 0px 120px;
+  /* /* text-align:left; */
+  margin: 12px 0px 0px 0px;
+  width: 250px;
+  float: left;
+}
+
+.footer-title h1{
+  font-size: 20px;
+  margin: 0px;
+  }
+.footer-title p {
+    color:white;
+    /* margin: 10px 0px 0px 0px; */
+    font-size: 15px;
+  }
+.footer-list{
+  float: right;
+  margin:0px 40px 0px 0px;
+  width: 350px;
+  font-size:12px;
+}
+.footer-list li{
+  float: left;
+  list-style: none;
+  margin: 36px 20px 0px 15px;
+}
+
+.footer-list li a{
+  text-decoration: none;
+  color:white;
+}
+.footer-list li a:hover{
+ color:#CCCCCC;
+}
+.footer p{
+  font-size: 12px;
+  text-align: center;
+  padding: 87px 0px 0px 0px;
+  margin:0px
+}
+
