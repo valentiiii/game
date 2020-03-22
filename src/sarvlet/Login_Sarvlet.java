@@ -1,6 +1,7 @@
 package sarvlet;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import model.ContactBean;
 import model.LoginBean;
 import model.LoginDAO;
 
@@ -34,10 +36,15 @@ public class Login_Sarvlet extends HttpServlet {
 
 
 		if ((textLogin.getId().equals(dao.getId())) && (textLogin.getPass().equals(dao.getPass()))) {
+
+			List<ContactBean> beanlist = dao.content();
+
+			request.setAttribute("beanlist",beanlist );
+
 			HttpSession session = request.getSession();
 			session.setAttribute("LoginBean", textLogin);
-			
-			RequestDispatcher dispatcher = request.getRequestDispatcher("html/contact.html");
+
+			RequestDispatcher dispatcher = request.getRequestDispatcher("html/maneger.jsp");
 			dispatcher.forward(request, response);
 		}else {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("html/dalete.html");
