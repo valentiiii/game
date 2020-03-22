@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class LoginDAO{
 
@@ -16,6 +18,7 @@ public class LoginDAO{
 	private String pass;
 
 
+	//ログインの照合
 	public boolean userdt() {
 
 		Connection conn = null;
@@ -34,17 +37,13 @@ public class LoginDAO{
 
 			//結果票に格納されたレコード内容を、LoginBeanインスタンスに設定
 			while(rs.next()) {
-			id = rs.getString("login_id");
-			pass = rs.getString("password");
+				id = rs.getString("login_id");
+				pass = rs.getString("password");
 			}
-
 
 			/*			String id = rs.getString("login_id");
 						String pass = rs.getString("password");
 						LoginBean loginbean = new LoginBean(id,pass);*/
-
-
-
 		}catch (SQLException e) {
 		    e.printStackTrace();
 		    return false;
@@ -63,26 +62,56 @@ public class LoginDAO{
 		    	}
 		    }
 		}
-			return true;
-		}
-
+		return true;
+	}
 
 	public String getId() {
 		return id;
 	}
-
-
-	/*	public void setId(String id) {
-			this.id = id;
-		}*/
-
 
 	public String getPass() {
 		return pass;
 	}
 
 
-	/*	public void setPass(String pass) {
-			this.pass = pass;
-		}*/
+
+	//問い合わせ結果の出力
+	public List<ContactBean> content() {
+
+		Connection conn = null;
+
+		List<ContactBean> beanlist = new ArrayList<>();
+
+		try {
+
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection(JDBC_URL,DB_USER,DB_PASS);
+			String sql = "SELECT name, address, content FROM game";
+
+			//SELECT文の準備
+			PreparedStatement pStmt = conn.prepareStatement(sql);
+
+			//SELECTを実行し、結果票を取得
+			ResultSet rs = pStmt.executeQuery();
+
+			//結果票に格納されたレコード内容を、LoginBeanインスタンスに設定
+			while(rs.next()) {
+				String name = rs.getString("name");
+				String address = rs.getString("address");
+				String content = rs.getString("content");
+
+				ContactBean lb = new ContactBean(name,address,content);
+				beanlist.add(lb);
+
+
+			}
+
+		}catch(SQLException | ClassNotFoundException e){
+			return null;
+
+
+		}
+		return beanlist;
+
 	}
+}
