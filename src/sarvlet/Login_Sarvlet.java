@@ -36,6 +36,7 @@ public class Login_Sarvlet extends HttpServlet {
 		if ((textLogin.getId().equals(dao.getId())) && (textLogin.getPass().equals(dao.getPass()))) {
 			HttpSession session = request.getSession();
 			session.setAttribute("LoginBean", textLogin);
+			
 			RequestDispatcher dispatcher = request.getRequestDispatcher("html/contact.html");
 			dispatcher.forward(request, response);
 		}else {
