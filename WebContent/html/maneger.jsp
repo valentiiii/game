@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<%@ page import = "model.ContactBean,java.util.List" %>
+<%  List<ContactBean> beanlist = (List<ContactBean>)request.getAttribute("beanlist");%>
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -8,7 +9,7 @@
     <meta name="description" cpntent="ゲーム通販です">
     <meta charset="utf-8">
     <title>ゲーム通販まとめ</title>
-    <link rel="stylesheet" href="css/manager.css">
+    <link rel="stylesheet" href="../css/manager.css">
     <script src="js/contact.js"></script>
   </head>
 
@@ -21,7 +22,6 @@
       </div>
     </div>
 <!--------------------------------------------------------------------------------------header　ここまで  -->
-
 	<div class="main">
 		<table class="m_table" border="1" align="center">
 			<tr>
@@ -31,14 +31,17 @@
 			 	<th class="adress">アドレス</th>
 			 	<th class="content">問い合わせ内容</th>
 			</tr>
+			<%for(ContactBean listbean : beanlist ){ %>
 			<tr>
 				<td>2020/03/22</td>
 				<td>No.111</td>
-				<td>岡島　優</td>
-				<td>okajimayuupage@gmail.com</td>
-				<td>問い合わせ内容444</td>
-
+				<td><%=listbean.getName() %></td>
+				<td><%=listbean.getAddress() %></td>
+				<td><%=listbean.getContent() %></td>
 			</tr>
+			<%} %>
+
+
 		</table>
 	</div>
 <!--------------------------------------------------------------------------------------main　ここまで  -->
