@@ -7,6 +7,7 @@ body{
   margin: 0px;
   background-color: #EEEEEE;
   height: auto;
+  min-height: 100vh;
   /* width: 1000px; */
 }
 
@@ -19,7 +20,7 @@ body{
   padding:0px;
 }
 .title{
-  padding:26px 0px 0px 130px;
+  padding:23px 0px 0px 130px;
   /* /* text-align:left; */
   margin: 0px;
   width: 500px;
@@ -66,106 +67,42 @@ list-style: none;
 }
 /* ------------------------------------------------------------------------------------header　ここまで */
 
-
-
-.header-bottom{
-  background-color: white;
-  font-size: 14px;
-  margin-bottom: 30px;
-}
-.update-home{
-  margin: 0px;
-  padding: 28px 0px 0px 130px;
-}
-
-.update-home a{
-  text-decoration: none;
-
-}
-.update-home a:hover{
- color:#CCCCCC;
-}
-.header-bottom h2{
-  margin:0px;
-  padding: 0px 0px 0px 130px;
-}
-.update-text{
-  margin:0px;
-  padding: 0px 0px 30px 130px;
-}
-
-/* ------------------------------------------------------------------------------------header-bottom　ここまで */
-
-
 .main{
- height: 380px;
- margin-top: 100px;
- text-align: center;
-}
-.picture{
- background-color: white;
- /* float: left; */
- display: inline-block;
- margin: 0px 40px;
- width: 15%;
- height: 350px;
- border: 2px solid #dee7ec;
-}
-.urltitle{
-  text-align: left;
-  padding: 12px 0% 12px 20px;
-  margin: 0px;
-  font-size:18px;
+  margin-top:100px;
 }
 
-.urltitle a{
-  text-decoration: none;
-  color:#474747;
+.m_table{
+  background-color:#e6e6fa;
+  text-align: center;
+  align: center;
 }
 
-.urltitle a:hover{
- text-decoration:underline;
+/*日時*/
+.date{
+  width: 100px;
 }
 
-.middle{
-  height: 160px;
-  width: 100%;
-  position:relative;
-  border-top: 2px solid #dee7ec;
-  border-bottom: 2px solid #dee7ec;
+/*NO*/
+ .no{
+  width: 80px;
 }
-.middle a {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 160px;
-  text-indent:-999px;
+
+/*名前*/
+.name{
+  width: 100px;
 }
-.middle:hover {
-  filter:alpha(opacity=70);/* IE 6,7*/
-  -ms-filter: "alpha(opacity=70)";/* IE 8,9 */
-  -moz-opacity:0.7;/* FF , Netscape */
-  -khtml-opacity: 0.7;/* Safari 1.x */
-  opacity:0.7;
-  zoom:1;/*IE*/
+
+/*アドレス*/
+.adress{
+  width: 250px;
 }
-img{
-  width: 100%;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+
+/*問い合わせ内容*/
+.content{
+  width: 300px;
 }
-.text{
-  text-align: left;
-  font-size: 15px;
-}
-.texttt{
-  margin:14px 14px;
-}
+
+
 
 /* ------------------------------------------------------------------------------------main　ここまで */
 
@@ -173,7 +110,10 @@ img{
   background-color: black;
   color: white;
   height: 112px;
-  margin-top: 55px;
+  width:100%;
+  margin-top: 50px;
+  position: absolute;/*←絶対位置*/
+  bottom: 0; /*下に固定*/
 }
 .footer-title{
   padding:30px 0px 0px 120px;
@@ -215,7 +155,6 @@ img{
   font-size: 12px;
   text-align: center;
   padding: 87px 0px 0px 0px;
+  margin:0px
 }
-
-
 
