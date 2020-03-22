@@ -9,7 +9,7 @@
     <meta name="description" cpntent="ゲーム通販です">
     <meta charset="utf-8">
     <title>ゲーム通販まとめ</title>
-    <link rel="stylesheet" href="../css/manager.css">
+    <link rel="stylesheet" href="<%= request.getContextPath() + "/html/css/maneger.css" %>">
     <script src="js/contact.js"></script>
   </head>
 
