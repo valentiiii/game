@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import = "model.ContactBean,java.util.List" %>
-<%  List<ContactBean> beanlist = (List<ContactBean>)session.getAttribute("beanlist");%>
+<%  List<ContactBean> beanlist = (List<ContactBean>)request.getAttribute("beanlist");%>
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -31,16 +31,17 @@
 			 	<th class="adress">アドレス</th>
 			 	<th class="content">問い合わせ内容</th>
 			</tr>
-			<tr>
 			<%for(ContactBean listbean : beanlist ){ %>
+			<tr>
 				<td>2020/03/22</td>
 				<td>No.111</td>
 				<td><%=listbean.getName() %></td>
 				<td><%=listbean.getAddress() %></td>
 				<td><%=listbean.getContent() %></td>
+			</tr>
 			<%} %>
 
-			</tr>
+
 		</table>
 	</div>
 <!--------------------------------------------------------------------------------------main　ここまで  -->
