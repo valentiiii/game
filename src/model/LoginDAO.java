@@ -12,8 +12,11 @@ public class LoginDAO{
 	private final String DB_USER ="root";
 	private final String DB_PASS ="password";
 
+	private String id;
+	private String pass;
 
-	public boolean userdt(LoginBean login) {
+
+	public boolean userdt() {
 
 		Connection conn = null;
 
@@ -30,14 +33,17 @@ public class LoginDAO{
 			ResultSet rs = pStmt.executeQuery();
 
 			//結果票に格納されたレコード内容を、LoginBeanインスタンスに設定
-			String id = rs.getString("ID");
-			String pass = rs.getString("pass");
-			LoginBean loginbean = new LoginBean(id,pass);
+			while(rs.next()) {
+			id = rs.getString("login_id");
+			pass = rs.getString("password");
+			}
 
 
-		    if (rs != 1) {
-		          return false;
-		    }
+			/*			String id = rs.getString("login_id");
+						String pass = rs.getString("password");
+						LoginBean loginbean = new LoginBean(id,pass);*/
+
+
 
 		}catch (SQLException e) {
 		    e.printStackTrace();
@@ -51,14 +57,32 @@ public class LoginDAO{
 			// データベース切断
 		    if (conn != null) {
 		    	try {
-		    	conn.close();
-		} catch (SQLException e) {
-			e.printStackTrace();
+		    		conn.close();
+		    	} catch (SQLException e) {
+		    		e.printStackTrace();
+		    	}
+		    }
 		}
-	}
-}
-		return true;
+			return true;
+		}
 
 
+	public String getId() {
+		return id;
 	}
-}
+
+
+	/*	public void setId(String id) {
+			this.id = id;
+		}*/
+
+
+	public String getPass() {
+		return pass;
+	}
+
+
+	/*	public void setPass(String pass) {
+			this.pass = pass;
+		}*/
+	}
