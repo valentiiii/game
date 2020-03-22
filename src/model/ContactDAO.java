@@ -19,12 +19,20 @@ public class ContactDAO{
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(JDBC_URL,DB_USER,DB_PASS);
-			String sql = "INSERT INTO game (NAME, ADDRESS, CONTENT) VALUES( ? , ? , ? )";
+
+			//現在の日付を取得
+//			java.util.Date today = new java.util.Date();
+//			java.sql.Date(today.getTime());
+
+			//入力された値をセット
+			String sql = "INSERT INTO game (number_id,day,NAME, ADDRESS, CONTENT) VALUES(? , DATE ? , ? , ? , ? )";
 
 			PreparedStatement pStmt = conn.prepareStatement(sql);
-			pStmt.setString(1, contact.getName());
-			pStmt.setString(2, contact.getAddress());
-			pStmt.setString(3, contact.getContent());
+			pStmt.setInt(1, 1);
+			pStmt.setDate(2, java.sql.Date.valueOf(java.time.LocalDate.now()));
+			pStmt.setString(3, contact.getName());
+			pStmt.setString(4, contact.getAddress());
+			pStmt.setString(5, contact.getContent());
 
 			// INSERT文を実行
 			int result = pStmt.executeUpdate();
