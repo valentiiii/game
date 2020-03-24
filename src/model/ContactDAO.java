@@ -61,4 +61,35 @@ public class ContactDAO{
 		}
 		return true;
 		}
+
+	//自動採番のメソッド
+	public int noget() {
+		
+		
+		
+		
+		return 50;
 	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
