@@ -68,71 +68,50 @@ list-style: none;
  color:#CCCCCC;
 }
 
- /*ウィンドウ幅が最大767pxまでの場合に適用*/
+
+/* ---------------------------------------------------------------------------------ここからスマホ */
+
+
+ /*ウィンドウ幅が最大479pxまでの場合に適用*/
 @media screen and (max-width: 479px) {
 html{
-  height: auto;
-  width:auto;
+	height:100%;
+	width:100%;
+	background-color:balck;
 }
-body{
-  font-family: YuGothic,'Yu Gothic',sans-serif;
-  margin: 0px;
-  background-color: #EEEEEE;
-  height: auto;
-  width: 100%;
+h1{
+	color: red;
 }
 
 
-.header {
-  color:white;
-  background-color:#333333;
-  height: 140px;
-  margin: 0px;
-  padding:0px;
-}
-.title{
-  padding:26px 0px 0px 130px;
-  /* /* text-align:left; */
-  margin: 0px;
-  width: 500px;
-  float: left;
-}
 
-.title h1{
-margin: 0px;
-list-style: none;
 
-}
 
-.title h1 a{
-  text-decoration: none;
-  color:white;
-}
-.title h1 a:hover{
- color:#CCCCCC;
-}
-.title p {
-  color:white;
-  margin: 0px;
-  font-size: 15px;
-}
 
-.header-list{
-  float: right;
-  margin: 70px 30px 0px 0px;
-  width: 400px;
-}
 
-.header-list li{
-  font-size: 14px;
-  float: left;
-  list-style: none;
-  margin: 0% 5%;
-}
-.header-list li a{
-  text-decoration: none;
-  color:white;
-}
-.header-list li a:hover{
- color:#CCCCCC;
-}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
