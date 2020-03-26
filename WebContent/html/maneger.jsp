@@ -25,8 +25,8 @@
 	<div class="main">
 		<table class="m_table" border="1" align="center">
 			<tr>
-		 		<th class="date">日時</th>
 			 	<th class="no">No.</th>
+		 		<th class="date">日時</th>
 			 	<th class="name">名前</th>
 			 	<th class="adress">アドレス</th>
 			 	<th class="content">問い合わせ内容</th>
