@@ -194,28 +194,25 @@ textarea{
 }
 }
 
-
-
-
-
-
  /*ウィンドウ幅が最大479pxまでの場合に適用*/
 @media screen and (max-width:479px) {
 html{
 	height:100%;
 	width:auto;
 }
+
 *{
 	margin:0px;
 	padding:0px;
-
 }
+
 body{
   font-family: YuGothic,'Yu Gothic',sans-serif;
   margin: 0px;
   background-color: #EEEEEE;
   height: auto;
 }
+
 .header {
   color:white;
   background-color:#333333;
@@ -223,6 +220,7 @@ body{
   margin: 0px;
   padding:0px;
 }
+
 .title{
   margin: 0px;
   float: left;
@@ -233,10 +231,12 @@ body{
   margin: 0px;
   list-style: none;
 }
+
 .title h1 a{
   text-decoration: none;
   color:white;
 }
+
 .title h1 a:hover{
  color:#CCCCCC;
 }
@@ -257,42 +257,50 @@ body{
   text-decoration: none;
   color:white;
 }
+
 /* ------------------------------------------------------------------------------------header　ここまで */
+
 .header-bottom{
   display:none;
 }
-/* ------------------------------------------------------------------------------------header-bottom　ここまで */
 
+/* ------------------------------------------------------------------------------------header-bottom　ここまで */
 
 .contact-div{
   text-align: center;
 }
+
 .contact-form{
   margin:0px auto;
 }
+
 form{
   text-align: center;
 }
+
 .contact-form p{
   margin: 7% 0% 0% 0%;
 }
+
 input{
   width: 180px;
   height: 35px;
   margin: 0px 0px;
   border: 1px solid #dee7ec;
 }
+
 textarea{
   border: 1px solid #dee7ec;
   height: 120px;
   width: 180px;
-
 }
+
 .contact-submit{
   background-color: #AAAAAA;
   border: 1px solid #dee7ec;
   cursor: pointer;
 }
+
 .contact-submit:hover{
   transition : 0.5s;
   color:#000066;
@@ -308,17 +316,9 @@ textarea{
   height: 112px;
   margin-top: 55px;
 }
-.footer-title{
-}
 
-.footer-title h1{
-  }
-.footer-title p {
-  }
-.footer-list{
-}
 .footer-list li{
-		  text-align: right
+  text-align: right
 }
 
 .footer-list li a{
@@ -326,46 +326,14 @@ textarea{
   color:white;
   margin: 30px 30px 0px 0px;
 }
+
 .footer-list li a:hover{
- color:#CCCCCC;
+  color:#CCCCCC;
 }
+
 .footer p{
   font-size: 12px;
   text-align: center;
   padding: 0px 0px 0px 0px;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
