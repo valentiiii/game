@@ -246,7 +246,7 @@ body{
   color:white;
   background-color:#333333;
   height: 140px;
-  margin: 0px;
+  margin: 0px 0px 30px 0px;
   padding:0px;
 }
 .title{
@@ -294,8 +294,8 @@ list-style: none;
 /* ------------------------------------------------------------------------------------header-bottom　ここまで */
 
 .main{
- height: 400px;
- margin-top: 50px;
+ height: auto;
+/*  margin-top: 50px; */
  text-align: center;
 }
 .picture{
