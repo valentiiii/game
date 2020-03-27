@@ -106,6 +106,7 @@ list-style: none;
  background-color: white;
  /* float: left; */
  display: inline-block;
+ vertical-align: top;
  margin: 0px 40px;
  width: 15%;
  height: 350px;
