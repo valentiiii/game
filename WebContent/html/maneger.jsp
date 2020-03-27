@@ -33,8 +33,8 @@
 			</tr>
 			<%for(ContactBean listbean : beanlist ){ %>
 			<tr>
-				<td>2020/03/22</td>
-				<td>No.111</td>
+				<td><%=listbean.getNum() %></td>
+				<td><%=listbean.getDate() %></td>
 				<td><%=listbean.getName() %></td>
 				<td><%=listbean.getAddress() %></td>
 				<td><%=listbean.getContent() %></td>

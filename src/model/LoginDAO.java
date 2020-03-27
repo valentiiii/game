@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class LoginDAO{
@@ -86,7 +87,7 @@ public class LoginDAO{
 
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(JDBC_URL,DB_USER,DB_PASS);
-			String sql = "SELECT name, address, content FROM game";
+			String sql = "SELECT number_id,day,name, address, content FROM game";
 
 			//SELECT文の準備
 			PreparedStatement pStmt = conn.prepareStatement(sql);
@@ -94,22 +95,20 @@ public class LoginDAO{
 			//SELECTを実行し、結果票を取得
 			ResultSet rs = pStmt.executeQuery();
 
-			//結果票に格納されたレコード内容を、LoginBeanインスタンスに設定
+			//結果票に格納されたレコード内容を、ContactBeanインスタンスに設定
 			while(rs.next()) {
+				int num = rs.getInt("number_id");
+				Date date = rs.getDate("day");
 				String name = rs.getString("name");
 				String address = rs.getString("address");
 				String content = rs.getString("content");
 
-				ContactBean lb = new ContactBean(name,address,content);
+				ContactBean lb = new ContactBean(num,date,name,address,content);
 				beanlist.add(lb);
-
-
 			}
 
 		}catch(SQLException | ClassNotFoundException e){
 			return null;
-
-
 		}
 		return beanlist;
 

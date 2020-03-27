@@ -78,6 +78,11 @@ html{
 	height:100%;
 	width:auto;
 }
+*{
+	margin:0px;
+	padding:0px;
+
+}
 body{
   font-family: YuGothic,'Yu Gothic',sans-serif;
   margin: 0px;
@@ -113,9 +118,20 @@ list-style: none;
  color:#CCCCCC;
 }
 
+.header-list{
+  float: right;
+  margin: 30px 30px 0px 0px;
+}
 
+.header-list li{
+  list-style: none;
+}
 
-
+.header-list li a{
+  list-style: none;
+  text-decoration: none;
+  color:white;
+}
 
 
 

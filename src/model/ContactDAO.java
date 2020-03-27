@@ -37,7 +37,9 @@ public class ContactDAO{
 			pStmt.setDate(2, java.sql.Date.valueOf(java.time.LocalDate.now()));
 			pStmt.setString(3, contact.getName());
 			pStmt.setString(4, contact.getAddress());
-			pStmt.setString(5, contact.getContent());
+
+			//エスケープ処理を行い内容をセット
+			pStmt.setString(5, htmlEscape(contact.getContent().toString()));
 
 			// INSERTを実行
 			int result = pStmt.executeUpdate();
@@ -85,6 +87,43 @@ public class ContactDAO{
 			count += 1;
 		}
 		return count;
+	}
+
+    /**
+     * <p>[概 要] HTMLエスケープ処理</p>
+     * <p>[詳 細] </p>
+     * <p>[備 考] </p>
+     * @param  str 文字列
+     * @return HTMLエスケープ後の文字列
+     */
+	public static String htmlEscape(String str){
+		StringBuffer result = new StringBuffer();
+		for(char c : str.toCharArray()) {
+			switch (c) {
+			case '&' :
+				result.append("&amp;");
+				break;
+			case '<' :
+				result.append("&lt;");
+				break;
+			case '>' :
+				result.append("&gt;");
+				break;
+			case '"' :
+				result.append("&quot;");
+				break;
+			case '\'' :
+				result.append("&#39;");
+				break;
+			case ' ' :
+				result.append("&nbsp;");
+				break;
+			default :
+				result.append(c);
+				break;
+			}
+		}
+		return result.toString();
 	}
 }
 
