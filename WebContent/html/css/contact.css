@@ -191,21 +191,20 @@ textarea{
 }
 }
 
- /*ウィンドウ幅が最大479pxまでの場合に適用*/
+ /*---------------ウィンドウ幅が最大479pxまでの場合に適用-------------------------*/
 @media screen and (max-width:479px) {
 html{
-	height:100%;
-	width:auto;
+  height:100%;
+  width:auto;
 }
 
 *{
-	margin:0px;
-	padding:0px;
+  margin:0px;
+  padding:0px;
 }
 
 body{
   font-family: YuGothic,'Yu Gothic',sans-serif;
-  margin: 0px;
   background-color: #EEEEEE;
   height: auto;
 }
@@ -213,45 +212,37 @@ body{
 .header {
   color:white;
   background-color:#333333;
-  height: 140px;
-  margin: 0px;
-  padding:0px 2px 0px 2px;
+  height: 120px;
 }
 
 .title{
   text-align: center;
-  margin: 0px;
-  float: left;
-}
-
-.title h1{
-  font-size:30px;
-  margin: 0px;
-  list-style: none;
 }
 
 .title h1 a{
+  font-size:40px;
+  list-style: none;
   text-decoration: none;
   color:white;
 }
 
 .title h1 a:hover{
- color:#CCCCCC;
+  color:#CCCCCC;
 }
 
-.header-list{
-  float: right;
-  margin: 0px 30px 0px 0px;
+.title p {
+  color:white;
+  font-size: 13px;
 }
 
 .header-list li{
+  float: right;
+  margin: 8px 20px 0px 0px;
   list-style: none;
   font-size: 14px;
-  float: left;
 }
 
 .header-list li a{
-  list-style: none;
   text-decoration: none;
   color:white;
 }
@@ -274,6 +265,7 @@ body{
 
 form{
   text-align: center;
+  height: 380px;
 }
 
 .contact-form p{
@@ -281,22 +273,23 @@ form{
 }
 
 input{
-  width: 180px;
+  width: 250px;
   height: 35px;
-  margin: 0px 0px;
-  border: 1px solid #dee7ec;
+  border: 1px solid #DDDDDD;
 }
 
 textarea{
-  border: 1px solid #dee7ec;
+  border: 1px solid #DDDDDD;
   height: 120px;
-  width: 180px;
+  width: 250px;
 }
 
 .contact-submit{
   background-color: #AAAAAA;
   border: 1px solid #dee7ec;
   cursor: pointer;
+    margin: 7% 0% 0% 0%;
+
 }
 
 .contact-submit:hover{
@@ -313,7 +306,14 @@ textarea{
   color: white;
   height: 112px;
   margin-top: 55px;
+
+
 }
+
+.footer-title h1{
+  text-align: center;
+  margin: 0px;
+  }
 
 .footer-list li{
   text-align: right
@@ -332,6 +332,5 @@ textarea{
 .footer p{
   font-size: 12px;
   text-align: center;
-  padding: 0px 0px 0px 0px;
 }
 }
