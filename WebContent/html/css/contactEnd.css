@@ -165,7 +165,7 @@ list-style: none;
 .footer p{
   font-size: 15px;
   text-align: center;
-  padding: 87px 0px 0px 0px;
+  padding: 73px 0px 0px 0px;
 }
 }
 
@@ -199,7 +199,7 @@ body{
 }
 
 .title h1 a{
-  font-size:40px;
+  font-size:33px;
   list-style: none;
   text-decoration: none;
   color:white;
@@ -225,7 +225,6 @@ body{
   text-decoration: none;
   color:white;
 }
-
 /* ------------------------------------------------------------------------------------header　ここまで */
 
 .header-bottom{
@@ -252,12 +251,13 @@ body{
   background-color: black;
   color: white;
   height: 112px;
-  margin-top: 40px;
+  margin-top: 55px;
 }
 
 .footer-title h1{
-  text-align: center;
   margin: 0px;
+  font-size: 20px;
+  margin: 0px 0px 0px 37px;
   }
 
 .footer-list li{
@@ -279,4 +279,3 @@ body{
   text-align: center;
 }
 }
-

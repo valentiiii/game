@@ -220,7 +220,7 @@ body{
 }
 
 .title h1 a{
-  font-size:40px;
+  font-size:33px;
   list-style: none;
   text-decoration: none;
   color:white;
@@ -306,13 +306,12 @@ textarea{
   color: white;
   height: 112px;
   margin-top: 55px;
-
-
 }
 
 .footer-title h1{
-  text-align: center;
   margin: 0px;
+  font-size: 20px;
+  margin: 0px 0px 0px 37px;
   }
 
 .footer-list li{
