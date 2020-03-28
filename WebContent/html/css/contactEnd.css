@@ -1,3 +1,6 @@
+@charset "UTF-8";
+ /*ウィンドウ幅が767px以上の場合に適用*/
+@media screen and (min-width: 768px) {
 html{
   height: auto;
   width:auto;
@@ -8,7 +11,6 @@ body{
   background-color: #EEEEEE;
   height: auto;
   min-height: 100vh;
-  /* width: 1000px; */
 }
 
 
@@ -21,7 +23,6 @@ body{
 }
 .title{
   padding:23px 0px 0px 130px;
-  /* /* text-align:left; */
   margin: 0px;
   width: 500px;
   float: left;
@@ -36,6 +37,7 @@ list-style: none;
 .title h1 a{
   text-decoration: none;
   color:white;
+
 }
 .title h1 a:hover{
  color:#CCCCCC;
@@ -48,13 +50,12 @@ list-style: none;
 
 .header-list{
   float: right;
-  margin: 70px 30px 0px 0px;
+  margin: 80px 30px 0px 0px;
   width: 400px;
 }
 
 .header-list li{
-  font-size: 14px;
-  float: left;
+  font-size: 18px;
   list-style: none;
   margin: 0% 5%;
 }
@@ -128,32 +129,30 @@ list-style: none;
   bottom: 0; /*下に固定*/
 }
 .footer-title{
-  padding:30px 0px 0px 120px;
-  /* /* text-align:left; */
+  padding:0px 0px 0px 110px;
   margin: 12px 0px 0px 0px;
   width: 250px;
   float: left;
 }
 
 .footer-title h1{
-  font-size: 20px;
+  font-size: 30px;
   margin: 0px;
   }
 .footer-title p {
     color:white;
-    /* margin: 10px 0px 0px 0px; */
     font-size: 15px;
   }
 .footer-list{
   float: right;
-  margin:0px 40px 0px 0px;
+  margin:0px;
   width: 350px;
-  font-size:12px;
+  font-size:20px;
 }
 .footer-list li{
   float: left;
   list-style: none;
-  margin: 36px 20px 0px 15px;
+  margin: 0px;
 }
 
 .footer-list li a{
@@ -164,9 +163,120 @@ list-style: none;
  color:#CCCCCC;
 }
 .footer p{
-  font-size: 12px;
+  font-size: 15px;
   text-align: center;
   padding: 87px 0px 0px 0px;
-  margin:0px
+}
+}
+
+
+ /*---------------ウィンドウ幅が最大479pxまでの場合に適用-------------------------*/
+@media screen and (max-width:479px) {
+html{
+  height:100%;
+  width:auto;
+}
+
+*{
+  margin:0px;
+  padding:0px;
+}
+
+body{
+  font-family: YuGothic,'Yu Gothic',sans-serif;
+  background-color: #EEEEEE;
+  height: auto;
+}
+
+.header {
+  color:white;
+  background-color:#333333;
+  height: 120px;
+}
+
+.title{
+  text-align: center;
+}
+
+.title h1 a{
+  font-size:40px;
+  list-style: none;
+  text-decoration: none;
+  color:white;
+}
+
+.title h1 a:hover{
+  color:#CCCCCC;
+}
+
+.title p {
+  color:white;
+  font-size: 13px;
+}
+
+.header-list li{
+  float: right;
+  margin: 8px 20px 0px 0px;
+  list-style: none;
+  font-size: 14px;
+}
+
+.header-list li a{
+  text-decoration: none;
+  color:white;
+}
+
+/* ------------------------------------------------------------------------------------header　ここまで */
+
+.header-bottom{
+  display:none;
+}
+
+/* ------------------------------------------------------------------------------------header-bottom　ここまで */
+
+
+.main{
+	  text-align: center;
+}
+.main h1{
+	font-size:23px;
+	margin:20px 0px 20px 0px;
+}
+.main p{
+  padding: 0px 10px 0px 10px;
+}
+
+/* ------------------------------------------------------------------------------------main　ここまで */
+
+.footer{
+  background-color: black;
+  color: white;
+  height: 112px;
+  margin-top: 40px;
+}
+
+.footer-title h1{
+  text-align: center;
+  margin: 0px;
+  }
+
+.footer-list li{
+  text-align: right
+}
+
+.footer-list li a{
+  text-decoration: none;
+  color:white;
+  margin: 30px 30px 0px 0px;
+}
+
+.footer-list li a:hover{
+  color:#CCCCCC;
+}
+
+.footer p{
+  font-size: 12px;
+  text-align: center;
+}
 }
 
