@@ -164,12 +164,12 @@ img{
   transform: translateY(-50%);
 }
 .text{
+  margin:0px;
   text-align: left;
-  font-size: 15px;
+  font-size: 14px;
+  padding: 12px;
 }
-.texttt{
-  margin:14px 14px;
-}
+
 
 /* ------------------------------------------------------------------------------------main　ここまで */
 
@@ -328,7 +328,7 @@ body{
 }
 
 .middle{
-  height: 70px;
+  height: 80px;
   width: 100%;
   position:relative;
   border-top: 2px solid #dee7ec;
@@ -360,6 +360,7 @@ img{
   transform: translateY(-50%);
 }
 .text{
+  padding: 5px;
   text-align: left;
   font-size: 10px;
 }
