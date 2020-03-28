@@ -10,7 +10,7 @@ body{
   margin: 0px;
   background-color: #EEEEEE;
   height: auto;
-  /* width: 1000px; */
+  min-height: 100vh;
 }
 
 
@@ -23,20 +23,21 @@ body{
 }
 .title{
   padding:23px 0px 0px 130px;
-  /* /* text-align:left; */
   margin: 0px;
   width: 500px;
   float: left;
 }
 
 .title h1{
-  margin: 0px;
-  list-style: none;
+margin: 0px;
+list-style: none;
+
 }
 
 .title h1 a{
   text-decoration: none;
   color:white;
+
 }
 .title h1 a:hover{
  color:#CCCCCC;
@@ -49,13 +50,12 @@ body{
 
 .header-list{
   float: right;
-  margin: 70px 30px 0px 0px;
+  margin: 80px 30px 0px 0px;
   width: 400px;
 }
 
 .header-list li{
-  font-size: 14px;
-  float: left;
+  font-size: 18px;
   list-style: none;
   margin: 0% 5%;
 }
@@ -151,14 +151,14 @@ textarea{
   margin-top: 55px;
 }
 .footer-title{
-  padding:30px 0px 0px 120px;
+  padding:0px 0px 0px 110px;
   margin: 12px 0px 0px 0px;
   width: 250px;
   float: left;
 }
 
 .footer-title h1{
-  font-size: 20px;
+  font-size: 30px;
   margin: 0px;
   }
 .footer-title p {
@@ -167,14 +167,14 @@ textarea{
   }
 .footer-list{
   float: right;
-  margin:0px 40px 0px 0px;
+  margin:0px;
   width: 350px;
   font-size:20px;
 }
 .footer-list li{
   float: left;
   list-style: none;
-  margin: 36px 20px 0px 15px;
+  margin: 0px;
 }
 
 .footer-list li a{
@@ -185,7 +185,7 @@ textarea{
  color:#CCCCCC;
 }
 .footer p{
-  font-size: 12px;
+  font-size: 15px;
   text-align: center;
   padding: 87px 0px 0px 0px;
 }
