@@ -14,22 +14,7 @@ body{
 }
 
 
-.header {
-  color:white;
-  background-color:#333333;
-  height: 140px;
-  margin: 0px;
-  padding:0px;
-}
-.title{
-  padding:23px 0px 0px 130px;
-  margin: 0px;
-  width: 500px;
-  float: left;
-}
 
-.title h1{
-margin: 0px;
 list-style: none;
 
 }
